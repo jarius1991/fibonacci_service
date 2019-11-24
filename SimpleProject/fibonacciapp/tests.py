@@ -35,17 +35,6 @@ class FibonacciTest(SimpleTestCase):
             self.assertEqual(current_response.status_code, 200)
             self.assertEqual(current_response.content, response)
 
-    def test_wrong_response(self):
-        input_with_wrong_response_values = {
-            2: b'3',
-            4: b'5',
-            11: b'None',
-        }
-        for index, response in input_with_wrong_response_values.items():
-            current_response = self.client.get(reverse("fibonacci:index_value", kwargs={"index": index}))
-            self.assertEqual(current_response.status_code, 200)
-            self.assertNotEqual(current_response.content, response)
-
     def test_invalid_input_data(self):
         invalid_index = ['-1', '-10', 'ss']
         for index in invalid_index:
