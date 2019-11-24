@@ -1,4 +1,4 @@
-#!/home/jeronimo/rekrutacja/fibonacci_servis/my_venv/bin/python3.6
+#!/home/jeronimo/rekrutacja/fibonacci_servis/my_venv/bin/python
 from django.core import management
 
 if __name__ == "__main__":
