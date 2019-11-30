@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 def calculate_fibonacci_number(request, index):
     """
-    This view returns a Fibonacci number, which correspond to the given index.
+    This view returns a Fibonacci number, which corresponds to the given index.
     :param HttpRequest request: Django HttpRequest object.
     :param int index: Index of requested Fibonacci number.
     :return: Value of Fibonacci number for provided index.
